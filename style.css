@@ -1,13 +1,37 @@
+
 .main{
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 2%;
-    border-style: solid;
-    border-width: 5px;
+    
+    padding-top: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
+    height: fit-content;
+    background-color: #315b55;
+    color: #eff7f6;
+    transition: transform 0.5s ease-in-out;
+	transition: border-radius 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
+    padding-bottom: 10px;
+}
+
+.main2{
+    border-top-style: solid; 
+    border-width: 5px;
+    border-radius: 20px; 
+    
+    background-color: #eff7f6;
+    transition: transform 0.5s ease-in-out;
+	transition: border-radius 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
     
 }
+
+.main2:hover,.main:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 20px;
+}
+
+
 
 .left1{
     /* width: 33%; */
@@ -19,35 +43,23 @@
 
 
 .img{
-    width: 75%;
-    border-radius: 50%;
-}
-
-/* .right1{
-    width: 33%;
-}
-
-.right1headings{
     width: 100%;
-} */
-
-.main2{
-    margin-left: 20%;
-    margin-right: 20%;
-    border-style: solid;
-    border-width: 5px;
-    
+    height: 100%;
+    border-radius: 50%;
     
 }
+
+
+
+
 
 .link1{
     text-decoration: none;
-    color: black;
-    width: 33%;
+    color: white;
+    font-style: bold;
 }
 .link1:hover{
-    text-decoration: underline;
-    color: blue;
+    color: black;
 }
 
 #span2{
@@ -60,34 +72,83 @@
     grid-template-columns: 1fr 1fr; 
     /* border-style: solid;
     border-width: 5px; */
-}
-.skills{
-    margin-left: 20%;
-    margin-right: 20%;
-    border-style: solid;
-    border-width: 5px;
     
 }
+
+.exdiv, .projects_div1, .skills_heading{      
+    transition: transform 0.5s ease-in-out;
+    /* box-shadow: 0px 0px 10px gray; */
+	transition: border-radius 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.projects_div1:hover,.ex_div:hover,.skills_heading:hover{
+    transform: scale(0.98);
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 10px;
+    background-color: #315b55;
+    color: #eff7f6;
+}
+
+
+
+
+
 .skills1{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;   
 }
 .skills_heading{
-    border-style:dashed;
+    border-style:dashed ;
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
    
 }
 
-.projects{
-    margin-left: 20%;
-    margin-right: 20%;
-    border-style: solid;
-    border-width: 5px;
-}
-.projects_div{
+
+ .projects_div{
     display: grid;
     grid-template-columns: 1fr 1fr ;
+}
+
+.lan1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+/* Style for the progress bars */
+.progress {
+    height: 30%;
+    width: 50%;
+    border-radius: 20px;
+    background-color: #ddd;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Style for the different progress bars */
+.progress-bar1 {
+    width: 90%;
+}
+
+.progress-bar2 {
+    width: 90%;
+}
+
+.progress-bar3 {
+    width: 80%;
+}
+.progress-bar4{
+    width: 75%;
 }
